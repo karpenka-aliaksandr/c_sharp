@@ -1,60 +1,18 @@
-﻿Console.WriteLine("Введите число:");
+﻿// Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+
+// a = 5; b = 7 -> max = 7
+// a = 2 b = 10 -> max = 10
+// a = -9 b = -3 -> max = -3
+
+Console.Write("Введите первое число: a = ");
 int a = Convert.ToInt32(Console.ReadLine());
-
-if (a < 1 || a > 7) 
+Console.Write("Введите второе число: b = ");
+int b = Convert.ToInt32(Console.ReadLine());
+int max = a;
+int min = b;
+if (a<b)
 {
-    Console.WriteLine("Такого дня нет:");
+    max = b;
+    min = a;
 }
-
-if (a == 1)
-    Console.WriteLine("Понедельник");
-if (a == 2)
-    Console.WriteLine("Вторник");
-if (a == 3)
-Console.WriteLine("Среда");
-if (a == 4)
-Console.WriteLine("Четверг");
-if (a == 5)
-Console.WriteLine("Пятница");
-if (a == 6)
-Console.WriteLine("Суббота");
-if (a == 7)
-Console.WriteLine("Воскресенье:");
-
-// Второе решение
-// Console.WriteLine("Введите число:");
-// int a = Convert.ToInt32(Console.ReadLine());
-// switch (a)
-// {
-//     case 1:
-//         Console.WriteLine("Понедельник");
-//     break;
-
-//     case 2:
-//         Console.WriteLine("Вторник");
-//     break;
-
-//     case 3:
-//         Console.WriteLine("Среда");
-//     break;
-
-//     case 4:
-//         Console.WriteLine("Четверг");
-//     break;
-
-//     case 5:
-//         Console.WriteLine("Пятница");
-//     break;
-
-//     case 6:
-//         Console.WriteLine("Суббота");
-//     break;
-
-//     case 7:
-//         Console.WriteLine("Воскресенье");
-//     break;
-
-//     default:
-//         Console.WriteLine("Такого дня нет");
-//     break;
-// }
+Console.WriteLine($"max = {max}, min = {min}.");
