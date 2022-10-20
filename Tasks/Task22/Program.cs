@@ -9,7 +9,7 @@ void Table(int n)
         int index = 1;
         while (index <= n)
         {
-            Console.WriteLine($"{index} {index*index}");
+            Console.WriteLine($"{index,4} {index*index,5}");
             index++;
         }
 
