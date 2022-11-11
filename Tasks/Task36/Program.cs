@@ -29,7 +29,7 @@ void PrintArray(int[] arr)
 int SumEvenPositionNumbers(int[] array)
 {
     int sumEvenPositionNumbers = 0;
-    for (int i = 1; i < array.Length; i += 2)
+    for (int i = 1; i < array.Length; i+=2)
         sumEvenPositionNumbers += array[i];
     return sumEvenPositionNumbers;
 }
