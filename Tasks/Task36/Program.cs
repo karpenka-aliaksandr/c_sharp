@@ -34,10 +34,10 @@ int SumEvenPositionNumbers(int[] array)
     return sumEvenPositionNumbers;
 }
 
-Console.WriteLine("Программа создает массив из 10 элементов, заполняет случайными числами из диапазона [-9,9] и высчитывает сумму элементов, стоящих на четных позициях");
 int size = 10;
 int min = -9;
 int max = 9;
+Console.WriteLine($"Программа создает массив из {size} элементов, заполняет случайными числами из диапазона [{min},{max}] и высчитывает сумму элементов, стоящих на четных позициях");
 int[] array = CreateArrayInt(size, min, max);
 PrintArray(array);
 int sumEvenPositionNumbers = SumEvenPositionNumbers(array);
