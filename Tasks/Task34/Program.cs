@@ -32,10 +32,10 @@ int EvenNumbers(int[] array)
     return evenNumbers;
 }
 
-Console.WriteLine("Программа создает массив из 10 элементов, заполняет случайными положительными трехзначными числами и показывает количество четных чисел в массиве.");
 int size = 10;
 int min = 100;
 int max = 999;
+Console.WriteLine($"Программа создает массив из {size} элементов, заполняет случайными положительными трехзначными числами и показывает количество четных чисел в массиве.");
 int[] array = CreateArrayInt(size, min, max);
 PrintArray(array);
 int evenNumbers = EvenNumbers(array);
