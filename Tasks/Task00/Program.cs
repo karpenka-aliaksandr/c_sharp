@@ -6,10 +6,10 @@
 // -3 -> 9
 // -7 -> 49
 
-Console.Write("Введите целое число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int square = number*number;
-Console.WriteLine($"Квадрат числа {number} = {square}");
+// Console.Write("Введите целое число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int square = number*number;
+// Console.WriteLine($"Квадрат числа {number} = {square}");
 
 
 // Мой начальный вариант
@@ -17,3 +17,10 @@ Console.WriteLine($"Квадрат числа {number} = {square}");
 // Console.Write(number);
 // Console.Write(" в квадрате равно ");
 // Console.Write(square);
+
+int a = 2;
+int b=3;
+int c=6;
+int d=4;
+double x = (b-a)/(c-d);
+Console.WriteLine(x);
