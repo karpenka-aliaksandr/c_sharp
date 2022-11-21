@@ -47,7 +47,7 @@ Console.Write("Введите номер строки массива: m=");
 int mFind = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите номар столбца массива: n=");
 int nFind = Convert.ToInt32(Console.ReadLine());
-bool isElementInMatrix = mFind <= matrix.GetLength(0) && nFind <= matrix.GetLength(1);
+bool isElementInMatrix = mFind>=1 && mFind <= matrix.GetLength(0) && nFind>=1 && nFind <= matrix.GetLength(1);
 Console.WriteLine(isElementInMatrix ?
                     $"Значение элемента в строке {mFind} и столбце {nFind} равно {matrix[mFind - 1, nFind - 1]}" :
                     $"Такого элемента нет.");
