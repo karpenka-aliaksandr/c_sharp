@@ -68,7 +68,7 @@ Console.Clear();
 Console.WriteLine("Программа создает двумерный массив cо случайным (от 3 до 5) количеством строк и столбцов и заполняет случайными числами [0;9].");
 Console.WriteLine("Далее программа находит строку с наименьшей суммой элементов");
 Random rnd = new Random();
-int m = rnd.Next(3, 8 + 1);
+int m = rnd.Next(3, 5 + 1);
 int n = rnd.Next(3, 5 + 1);
 int[,] matrix = CreateMatrixRndInt(m, n, 0, 9);
 
