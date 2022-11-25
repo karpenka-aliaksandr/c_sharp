@@ -22,19 +22,20 @@ int[,] CreateMatrixIntSpiral(int rows, int columns)
     while (matrSpiral[row, column] == 0)
     {
         matrSpiral[row, column] = number++;
-        if (!(row + deltaRow >= 0 && row + deltaRow < rows && column + deltaColumn >= 0 && column + deltaColumn < columns))
-        {   
-            (deltaRow, deltaColumn) = Rotate((deltaRow, deltaColumn));
-        }
-        else
-        {   
-            if (matrSpiral[row+deltaRow, column+deltaColumn] !=0)
-            (deltaRow, deltaColumn) = Rotate((deltaRow, deltaColumn));
-        }
-        if (row + deltaRow >= 0 && row + deltaRow < rows && column + deltaColumn >= 0 && column + deltaColumn < columns)
+        if (row + deltaRow >= 0 && row + deltaRow < rows && column + deltaColumn >= 0 && column + deltaColumn < columns
+            && matrSpiral[row + deltaRow, column + deltaColumn] == 0)
         {
             row += deltaRow;
             column += deltaColumn;
+        }
+        else
+        {
+            (deltaRow, deltaColumn) = Rotate((deltaRow, deltaColumn));
+            if (row + deltaRow >= 0 && row + deltaRow < rows && column + deltaColumn >= 0 && column + deltaColumn < columns)
+            {
+                row += deltaRow;
+                column += deltaColumn;
+            }
         }
     }
     return matrSpiral;
